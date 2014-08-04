@@ -16,6 +16,8 @@ describe Portfolio do
     expect(p.stocks).to include(s)
   end
   
+  it "should prevent adding something besides a Stock to @stocks"
+  
   it "should return the total value" do
     p = Portfolio.new
     s1 = Stock.new("Apple", "AAPL", 4000, :usd, 50)
